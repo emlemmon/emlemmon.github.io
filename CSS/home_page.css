@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow);
+
+body {
+    max-width: 800px;
+    font-family: "Archivo Narrow", helvitica, sans-serif;
+    margin:10px auto;
+}
+header img {
+    max-width: 110px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px 5px #999;
+    float: right;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+#assignments {
+    padding: 10px;
+}
+header, footer {
+    background-color: #08aaca;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}
+footer a {
+    color: white;
+}
+a:hover {
+    color:blue;
+}
