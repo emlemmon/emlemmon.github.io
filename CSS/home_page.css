@@ -4,6 +4,8 @@ body {
     max-width: 800px;
     font-family: "Archivo Narrow", helvitica, sans-serif;
     margin:10px auto;
+    font-size: 18px;
+    line-height: 1.4;
 }
 header img {
     max-width: 110px;
@@ -16,10 +18,13 @@ header img {
 #assignments {
     padding: 10px;
 }
+header {
+    font-size: 22px;
+}
 header, footer {
-    background-color: #08aaca;
+    background-color: #00829c;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 3px;
 }
 footer a {
