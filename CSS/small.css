@@ -24,7 +24,7 @@ h2 {
     font-size: 1rem;
 }
 header, footer {
-    background-color: #00829c;
+    background-color: #48cee9;
     text-align: center;
     color: rgb(0, 0, 0);
     padding: 3px;
@@ -34,7 +34,4 @@ a {
 }
 a:hover {
     color:blue;
-}
-#date {
-    color:rgb(190, 250, 247);
 }
