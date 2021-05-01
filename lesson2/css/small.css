@@ -1,0 +1,49 @@
+html {
+    background-color: rgb(238, 238, 238);
+}
+body {
+    max-width: 55rem;
+    font-family: 'Poiret One', cursive;
+    margin:auto;
+    font-size: 18px;
+    line-height: 1.4;
+}
+main {
+    display: grid;
+    margin: 20px;
+    gap: 2rem;
+}
+.pic-link {
+    margin-top: -12px;
+    display: block;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-size: 2rem;
+}
+h2, h3 {
+    font-size: 1.5rem;
+}
+.info-text {
+    font-family: 'Roboto', sans-serif;
+}
+header a:link,
+footer a:link,
+header a:visited,
+footer a:visited {
+   color: white;
+}
+.pic-link {
+    color: rgb(25, 9, 165);
+}
+header, footer {
+    background-color: #1f21a0;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
