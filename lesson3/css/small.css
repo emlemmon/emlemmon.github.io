@@ -1,0 +1,75 @@
+
+html {
+    background-color: #feed72;
+}
+header {
+    font-size: 1.7rem;
+}
+body {
+    max-width: 58rem;
+    font-family: 'Handlee', sans-serif;
+    margin:auto;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+main {
+    margin: 20px;
+    gap: 2rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.personaImg {
+    max-width: 360px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 2rem;
+    margin: 15px;
+}
+h1 {
+    font-size: 2rem;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: .1em;
+}
+h2, h3 {
+    font-size: 1.5rem;
+    font-family: 'Rock Salt', cursive;
+}
+p {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+nav ul li {
+    list-style-type: none;
+}
+ol {
+    margin-top: -.5rem;
+}
+header a:link,
+footer a:link,
+header a:visited,
+footer a:visited {
+   color: black;
+}
+header a:hover,
+footer a:hover {
+    color: white;
+}
+.pic-link {
+    color: rgb(25, 9, 165);
+}
+header, footer {
+    background-color: #f16f6a;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight:600;
+    border-style: solid;
+    border-color: #FFB833;
+    border-width: 1rem;
+    border-radius: 20px;
+    padding: 20px;
+}
