@@ -1,0 +1,23 @@
+@media only screen and (min-width: 37.5em) {
+    header img {
+        max-width: 90%;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul.hide {
+        display: flex;
+    }
+    nav ul {
+        margin-left: 2%;
+        overflow: hidden;
+    }
+    nav ul li {
+        float: left;
+        flex: 1;
+    }
+    nav ul li a {
+        border: none;
+        padding: .8rem 1rem;
+    }
+}
