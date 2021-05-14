@@ -45,11 +45,8 @@ header img {
 header, footer {
     background-color: #09ADC3;
 }
-footer a {
+footer a, footer a:visited {
     color: white;
-}
-footer a:visited {
-    color: black;
 }
 nav ul {
     list-style-type: none;
