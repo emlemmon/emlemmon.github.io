@@ -46,7 +46,7 @@ header, footer {
     background-color: #09ADC3;
 }
 footer a, footer a:visited {
-    color: white;
+    color: black;
 }
 nav ul {
     list-style-type: none;
