@@ -15,7 +15,7 @@ class RationalNum:
             print(str(self.numerator) + "/" + str(self.denominator))
         
     def reduce(self):
-        if int(self.denominator) % int(self.numerator) 
+        if int(self.denominator) % int(self.numerator):
 
     def prompt(self):
         self.numerator = input("Enter the Numerator: ")
