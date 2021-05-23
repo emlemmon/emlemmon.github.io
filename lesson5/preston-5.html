@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Preston Idaho Page for Our Weather Hot Spot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page for Preston Idaho in ourweatherhotspot.com that shows an image, 5 day forecast, and article, and contact information.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Rock+Salt&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ifFriday"> 🥞 Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion. 🥞</div>
+    <header>
+        <img src="images/sun_and_cloud_and_lightening_sm.png " alt="Our Weather Hot Spot Logo">
+        <section class="headings">
+            <h1>Our Weather Hot Spot</h1>
+            <h3>Visit for the weather, stay for the community buzz!</h3>
+        </section>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="navBtn"><a href="#">Home</a></li>
+            <li class="navBtn"><a href="#">Preston</a></li>
+            <li class="navBtn"><a href="#">Soda Springs</a></li>
+            <li class="navBtn"><a href="#">Fish Haven</a></li>
+            <li class="navBtn"><a href="#">Storm Center</a></li>
+            <li class="navBtn"><a href="#">Gallery</a></li>   
+        </ul>
+    </nav>
+    <main>
+        <h2 class="title">Preston Idaho</h2>
+        <div class="herodiv">
+            <img class="hero-img" src="images/sunrise-rs.jpg" alt="Beautiful picture of Preston Idaho">
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>High: 73°F</p>
+                <p>Wind Chill: 2°F</p>
+                <p>Humidity: 30%</p>
+                <p>Wind Speed: 2 mph</p>
+            </section>
+        </div>
+        <div class="forecast">
+            <h4 class="forecast-heading">Monday</h4>
+            <h4 class="forecast-heading">Tuesday</h4>
+            <h4 class="forecast-heading">Wednesday</h4>
+            <h4 class="forecast-heading">Thursday</h4>
+            <h4 class="forecast-heading">Friday</h4>            
+            <img class="forecast-img" src="images/sunny_rainy.png" alt="Sun icon">
+            <img class="forecast-img" src="images/sunny.png" alt="Sun icon">
+            <img class="forecast-img" src="images/windy.png" alt="Sun icon">
+            <img class="forecast-img" src="images/sun_and_cloud_and_lightening_sm.png" alt="Sun icon">
+            <img class="forecast-img" src="images/rainy.png" alt="Sun icon">            
+            <span class="forecast-span">H: 73°F - L: 50°F</span>
+            <span class="forecast-span">H: 80°F - L: 54°F</span>
+            <span class="forecast-span">H: 79°F - L: 57°F</span>         
+            <span class="forecast-span">H: 84°F - L: 55°F</span>
+            <span class="forecast-span">H: 66°F - L: 44°F</span>
+        </div>
+        <div class="article">
+            <h3>My Article Title</h3>            
+            <img class="article-img" src="images/red-sunflower-sm.jpg" alt="Red Sunflower">
+            <p>Article Author</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor eros sed laoreet gravida. Proin non iaculis dolor, vel consectetur est. Praesent sollicitudin tempor magna et venenatis. Proin fringilla lacus sit amet semper rutrum. Sed fermentum imperdiet risus. Nunc mollis tortor dolor, eget semper eros auctor eu. Vivamus at eros eros. Integer elit massa, facilisis sagittis leo quis, cursus viverra tortor. Nam hendrerit lorem nec est gravida, id porttitor metus varius. Etiam feugiat, justo ac ullamcorper sollicitudin, lacus risus consectetur lectus, at volutpat lorem est et purus. Duis vulputate gravida sapien, sit amet finibus mi semper non. Nulla pellentesque eget nisi id condimentum. Mauris viverra, ipsum nec finibus tincidunt, urna erat lacinia orci, eget euismod velit lacus nec libero. Curabitur scelerisque eros id metus tincidunt semper.<br>
+                <br>
+                Cras in fermentum nisi, vitae condimentum dolor. Sed ac nisi euismod, hendrerit augue non, bibendum turpis. Vestibulum accumsan dolor ultrices tortor ultricies rhoncus. Aliquam vitae arcu vitae elit rhoncus tempor nec vitae mi. Donec ipsum ipsum, gravida vitae fringilla sit amet, pharetra vitae metus. Etiam a diam lacus. Nulla bibendum sapien sem, ut viverra quam dapibus eu. Aenean gravida viverra pulvinar. Nunc vitae tellus non ligula molestie pharetra. Pellentesque sit amet condimentum lectus. Ut egestas sapien risus, non consectetur sapien facilisis non. Quisque id imperdiet lectus. Cras eu neque ut libero placerat condimentum.<br>
+                <br>
+                Nunc vitae turpis quis eros lacinia sodales. Maecenas euismod libero vitae ex sollicitudin pulvinar. Maecenas dui diam, sollicitudin id erat at, laoreet tempus purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dignissim magna, sed sodales nunc cursus eu. Cras varius, nulla vitae maximus gravida, turpis quam facilisis massa, sed condimentum nisl lacus non enim. Proin euismod ipsum vel auctor vehicula. Nam in lacus accumsan, tristique augue eget, ultrices turpis. Mauris euismod orci velit, gravida aliquet nisl sagittis in. Sed elementum, urna non faucibus sodales, libero odio euismod turpis, id ornare risus ex a ligula. Nullam nisi dolor, porta non dolor at, congue pretium enim.<br>
+                <br>
+                Integer sodales lorem urna, id vestibulum tortor feugiat in. Donec id sollicitudin orci, fringilla venenatis mauris. Mauris dapibus nulla justo, id hendrerit ante lobortis id. Quisque fringilla suscipit fringilla. Pellentesque sed lacinia diam. Nunc egestas auctor mauris. Vestibulum sit amet vestibulum tellus, in vulputate lectus. Aliquam ultricies orci nec nulla venenatis, eget gravida ipsum congue. Duis efficitur, nisl in cursus aliquet, augue urna placerat augue, a facilisis orci nibh et odio.<br>
+                <br>
+                Vestibulum vitae blandit felis, eu bibendum lorem. Quisque pulvinar sem vitae quam lobortis euismod. In commodo arcu nec ullamcorper porttitor. Cras accumsan justo et massa sollicitudin, et dictum dui tincidunt. Nulla facilisi. Morbi dignissim hendrerit lacus, sit amet rutrum ipsum. Aenean viverra non erat maximus rhoncus. Ut odio tortor, dictum eu diam eget, tempor facilisis orci. Pellentesque luctus placerat sem ac rutrum. Pellentesque nec enim efficitur, vulputate justo a, ullamcorper felis. Nullam aliquet semper pharetra. Aliquam ut interdum quam, a egestas neque. Vestibulum sollicitudin vulputate congue.</p>
+
+        </div>
+        <div class="contact-info">
+            <img class="map-img" src="images/denver-map.png" alt="Map of Denver, Colorado">
+            <section class="contact-info-text">
+                <h4>Our Weather Hot Spot</h4>
+                <span>301 North 50th West</span><br>
+                <span>Denver, Colorado 80216</span><br>
+                <br>
+                <span>📞 555-555-5555</span><br>
+                <span>📧 ourweatherhotspot.gmail.com</span><br>
+                <br>
+                <a class="social-media" href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram icon"></a>
+                <a class="social-media" href="https://www.twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter icon"></a>
+                <a class="social-media" href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook icon"></a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="ft">
+            &copy; Our Weather Hot Spot <span id="currentYear"></span> | <a href="../index.html">Emily Lemmon</a> | <a href="https://www.byui.edu/online" target="_blank">BYUI Online</a><br>
+            <span id="date"></span>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
