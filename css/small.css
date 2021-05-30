@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow);
-/*<link rel="preconnect" href="https://fonts.gstatic.com">
+/*@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow);
+<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">*/
 
 body {
     max-width: 45rem;
-    font-family: "Archivo Narrow", helvitica, sans-serif;
+    font-family: "Limelight", helvitica, sans-serif;
     margin:auto;
     font-size: 18px;
     line-height: 1.4;
