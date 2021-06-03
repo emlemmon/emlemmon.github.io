@@ -1,0 +1,13 @@
+.gallery {
+    display: grid;
+    grid-auto-flow:row;
+}
+img[data-src] {
+    filter: blur(0.2em);
+}
+img {
+    width: 300px;
+    height: 400px;
+    filter: blur(0em);
+    transition: filter 1s;
+}
