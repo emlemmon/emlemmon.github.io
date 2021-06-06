@@ -114,6 +114,7 @@ section .gallery-page {
 .gallery-img figure {
     margin: auto;
     width: 250px;
+    height: 384px;
     padding: 10px;
     background-color:cornsilk;
     border: 1px solid black;
