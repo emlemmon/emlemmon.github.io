@@ -5,10 +5,12 @@ table, th, td {
     font-size: 1.1rem;
 }
 table {
+    display: table;
     background-color: #7fb9c2;
     table-layout: fixed;
     width: 100%;
     max-width: 23rem;
+    box-shadow: 10px 20px 30px 0px #5c7c91
 }
 thead tr:nth-child(2) {
     background-color: #628ca6;
