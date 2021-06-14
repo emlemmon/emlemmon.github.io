@@ -1,0 +1,16 @@
+@media only screen and (min-width: 60em) {
+    header img {
+        max-width: 100%;
+    }
+    nav ul li a{ 
+        padding: .6rem 1rem
+    }
+    .gallery-img {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+    .gallery-img figure:hover {
+        box-shadow: 0 0 50px #333;
+    }
+}
