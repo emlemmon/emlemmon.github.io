@@ -2,12 +2,7 @@ body {
     background-color: #FEED72;
     font-family: 'Handlee', sans-serif;
 }
-.ifFriday {
-    display:none;
-    padding: .5rem;
-    font-size: larger;
-    text-align: center;
-}
+
 header {
     display:flex;
     align-content: center;
@@ -46,11 +41,12 @@ header img {
     flex-direction: column;
 }
 .hero-img {
-    margin: 10px auto;
-
+    margin: 12px auto;
     width: 100%;
 }
 .hero-img img {
+    display: block;
+    margin: 10px auto;
     width: 100%;    
     border: 3px solid #FFB833;
 }
@@ -60,37 +56,7 @@ header img {
     max-width: 800px;
     padding: .5rem;
 }
-.weather-summary {
-    top: 40px;
-    left: 40px;
-    background-color: #FFB83366;
-    border: 1px solid black;
-    padding: .5rem;
-}
-.weather-summary h3 {
-    border-bottom-style: solid;
-}
-.weather-summary p, .weather-summary h3 {
-    font-weight: bold;
-    margin: 15px;
-    padding: .1rem;
-}
-.forecast {
-    display: none;
-}
 
-.article {
-    display: block;
-    margin: 12px auto;
-    padding: .5rem;
-    max-width: 800px;
-    background-color:#FFB833;
-}
-.article-img {
-    float: right;
-    max-width: 100%;
-    border: 1px solid black;
-}
 .contact-info {
     background-color:#FFB833;
     margin: 0px -12px;
@@ -102,27 +68,7 @@ header img {
     margin: 15px;
     padding: 10px;
 }
-section .gallery-page {
-    max-width: 800px;
-}
-.gallery-img {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 20px;
-}
-.gallery-img figure {
-    margin: auto;
-    width: 250px;
-    height: 384px;
-    padding: 10px;
-    background-color:cornsilk;
-    border: 1px solid black;
-}
-.gallery-img figcaption {
-    margin: 5px;
-    text-align: center;
-    min-height: 2.25em;
-}
+
 header, footer {
     background-color: #09ADC3;
 }
@@ -176,6 +122,7 @@ nav ul.hide {
 .thanks picture {
     margin: 10px auto;
 }
+
 .storm textarea {
     resize: none;
     width: 30rem;
@@ -214,4 +161,106 @@ label input[type="radio"], [type="checkbox"] {
     background-color: #FFB833;
     border-radius: 6px;
     margin: .5rem 10px;
+}
+
+/*Gallery Page*/
+
+section .gallery-page {
+    max-width: 800px;
+}
+.gallery-img {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+.gallery-img figure {
+    margin: auto;
+    width: 250px;
+    height: 384px;
+    padding: 10px;
+    background-color:cornsilk;
+    border: 1px solid black;
+}
+.gallery-img figcaption {
+    margin: 5px;
+    text-align: center;
+    min-height: 2.25em;
+}
+
+/*Home page CSS*/
+
+.article-home-pg {
+    display: grid;
+    grid-template-columns: 33% 1fr;
+    gap: 12px;
+    margin: 12px auto;
+    padding: 1rem;
+    max-width: 1000px;
+    background-color:#FFB833;
+}
+
+.article-home-pg1 {
+    display: block;
+}
+.town-info {
+    display:block;
+    margin: 10px auto;
+    background-color: #F16A6A;
+    padding: .3rem;
+    max-width: 1000px;
+}
+div.towns section {
+    display: block;
+    background-color:#FFB833;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 10px;
+    justify-self: center;
+    max-width: 550px;
+}
+div.towns section img {
+    max-width: 420px;
+}
+
+
+/*Preston CSS*/
+
+.ifFriday {
+    display:none;
+    padding: .5rem;
+    font-size: larger;
+    text-align: center;
+}
+
+.weather-summary {
+    top: 40px;
+    left: 40px;
+    background-color: #FFB83366;
+    border: 1px solid black;
+    padding: .5rem;
+}
+.weather-summary h3 {
+    border-bottom-style: solid;
+}
+.weather-summary p, .weather-summary h3 {
+    font-weight: bold;
+    margin: 15px;
+    padding: .1rem;
+}
+.forecast {
+    display: none;
+}
+
+.article {
+    display: block;
+    margin: 12px auto;
+    padding: .7rem;
+    max-width: 800px;
+    background-color:#FFB833;
+}
+.article-img {
+    float: right;
+    max-width: 100%;
+    border: 1px solid black;
+    margin: .3rem;
 }

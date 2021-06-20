@@ -1,8 +1,8 @@
 while True:
     try:
-        n = input("Please enter an integer: ")
+        n = input("Enter a number: ")
         n = int(n)
         break
     except ValueError:
-        print("No valid integer! Please try again ...")
-print("Great, you successfully entered an integer!")
+        print("The value entered is not valid")
+print("The result is: {}".format(n*2))
