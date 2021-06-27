@@ -1,0 +1,38 @@
+@media only screen and (min-width: 60em) {
+    header img {
+        max-width: 100%;
+    }
+    .hero-img img{
+        max-width: 1100px;
+    }
+    nav ul li a{ 
+        padding: .6rem 1rem
+    }
+    .weather-summary {
+        top: 40px;
+        left: 130px;
+    }
+    .gallery-img {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+    .gallery-img figure:hover {
+        box-shadow: 0 0 50px #333;
+    }
+    .town-info {
+        max-width: 1020px;
+    }
+    div.towns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    div.towns section img {
+        width: 100%;
+    }
+    .contact-info {
+        max-width: 1030px;
+        margin: 10px auto;
+    }
+}
