@@ -53,9 +53,7 @@
         align-content: space-evenly;
         align-items: center;
     }
-    .forecast-zero, .forecast-first {
-        border: 3px solid #FFB833;
-    }
+
     .forecast-heading {
         text-decoration: underline;
         padding: .3rem;
