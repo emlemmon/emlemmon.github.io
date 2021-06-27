@@ -20,7 +20,6 @@
         padding: .8rem 1rem;
     }
     .weather-summary {
-        background-color: fade(#FFB833, 40%);
         position: absolute;
         top: 40px;
         left: 40px;
