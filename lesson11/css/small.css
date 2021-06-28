@@ -1,0 +1,284 @@
+body {
+    background-color: #FEED72;
+    font-family: 'Handlee', sans-serif;
+}
+
+header {
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+header h1 {
+    margin: 10px 0 5px 0;
+}
+header h3 {
+    margin: 5px 0 10px 40px;
+}
+main {
+    padding: 0 12px;
+}
+h1, h2, h3 {
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: .1em;
+}
+.title {
+    display: block;
+    margin: 12px auto;
+    max-width: 700px;
+    padding: 15px;
+}
+footer .ft {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+header img {
+    max-width: 75%;
+    margin: auto 0;
+}
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+.hero-img {
+    margin: 12px auto;
+    width: 100%;
+}
+.hero-img img {
+    display: block;
+    margin: 10px auto;
+    width: 100%;    
+    border: 3px solid #FFB833;
+    max-width: 900px;
+}
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    /*max-width: 800px;*/
+    padding: .5rem;
+}
+
+.contact-info {
+    background-color:#FFB833;
+    margin: 0px -12px;
+}
+.map-img {
+    display: none;
+}
+.contact-info-text {
+    margin: 15px;
+    padding: 10px;
+}
+
+header, footer {
+    background-color: #09ADC3;
+}
+footer {
+    padding: .5rem;
+}
+footer a, footer a:visited {
+    color: black;
+}
+.active {
+    font-weight: bolder;
+    font-style: italic;    
+    color: white;
+    background-color: #FFB833;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    text-align: center; 
+}
+
+nav ul li a:hover {
+    background-color: #FFB833;
+}
+nav ul.hide {
+    display: none;
+}
+
+/*Storm Center CSS*/
+
+.thanks {
+    display: grid;
+    max-width: 600px;
+    margin: 1em auto;
+    padding: 1em;
+}
+.thanks h2 {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.thanks picture {
+    margin: 10px auto;
+}
+
+.storm textarea {
+    resize: none;
+    width: 30rem;
+    max-width: 100%;
+  }
+.top, .storm {
+    display: block;
+    padding: .5rem;
+    
+}
+form fieldset {
+    margin: 2rem auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 5%;
+    max-width: 850px;
+}
+form legend {
+    font-size: 20px;
+}
+label input {
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+    padding: .5rem;
+}
+
+label input:invalid {
+    color: red;
+}
+label input[type="radio"], [type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+.submitBtn {
+    background-color: #FFB833;
+    border-radius: 6px;
+    margin: .5rem 10px;
+}
+
+/*Gallery Page*/
+
+section .gallery-page {
+    max-width: 800px;
+}
+.gallery-img {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+.gallery-img figure {
+    margin: auto;
+    width: 250px;
+    height: 384px;
+    padding: 10px;
+    background-color:cornsilk;
+    border: 1px solid black;
+}
+.gallery-img figcaption {
+    margin: 5px;
+    text-align: center;
+    min-height: 2.25em;
+}
+
+/*Home page CSS*/
+
+.article-home-pg {
+    display: grid;
+    grid-template-columns: 33% 1fr;
+    gap: 12px;
+    margin: 12px auto;
+    padding: 1rem;
+    max-width: 1000px;
+    background-color:#FFB833;
+}
+
+.article-home-pg1 {
+    display: block;
+}
+.town-info {
+    display:block;
+    margin: 10px auto;
+    background-color: #F16A6A;
+    padding: .3rem;
+    max-width: 1000px;
+}
+div.towns section {
+    display: block;
+    background-color:#FFB833;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 10px;
+    justify-self: center;
+    max-width: 550px;
+}
+div.towns section img {
+    max-width: 420px;
+}
+
+
+/*Preston CSS*/
+
+.ifFriday {
+    display: none;
+    padding: .5rem;
+    font-size: larger;
+    text-align: center;
+}
+.weather-summary {
+    background-color: #FFB83366;
+    border: 3px solid #a06800;
+}
+.weather-summary p {
+    line-height: .2rem;
+}
+    
+.weather-summary h3 {
+    border-bottom-style: solid;
+}
+.weather-summary p, .weather-summary h3 {
+    font-weight: bold;
+    margin: 15px;
+    padding: .1rem;
+}
+
+.forecast {
+    display: none;
+}
+
+.article {
+    display: block;
+    margin: 12px auto;
+    padding: .7rem;
+    max-width: 800px;
+    background-color:#FFB833;
+    border: 3px solid #a06800;
+}
+.article-img {
+    float: right;
+    max-width: 100%;
+    border: 2px solid black;
+    margin: .3rem;
+}
+
+/*Attributions CSS*/
+
+#attributions {
+    background-color:#F16A6A;
+    max-width: 700px;
+}
+#attributions p, #attributions ol li {
+    margin: auto 45px;
+}
+#attributions h4 {
+    margin: auto 10px;
+}
+#attributions img {
+    border: 2px solid black;
+}

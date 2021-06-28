@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Storm Center - Our Weather Hot Spot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Storm Center page with a form to report storms in the surrounding areas of Preston, Soda Springs, or Fish Haven">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+    
+    <header>
+        <img src="images/sun_and_cloud_and_lightening_sm.png " alt="Our Weather Hot Spot Logo">
+        <section class="headings">
+            <h1>Our Weather Hot Spot</h1>
+            <h3>Visit for the weather, stay for the community buzz!</h3>
+        </section>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="navBtn"><a href="../lesson11/index.html">Home</a></li>
+            <li class="navBtn"><a href="../lesson11/preston.html">Preston</a></li>
+            <li class="navBtn"><a href="../lesson11/sodasprings.html">Soda Springs</a></li>
+            <li class="navBtn"><a href="../lesson11/fishhaven.html">Fish Haven</a></li>
+            <li class="navBtn active"><a href="../lesson11/stormcenter.html">Storm Center</a></li>
+            <li class="navBtn"><a href="../lesson11/gallery.html">Gallery</a></li>   
+        </ul>
+    </nav>
+    <main>
+        <form action="thanks.html" method="GET">
+            <fieldset>
+                <legend>User Information</legend>
+                <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="storm">Storm Date <input type="date" name="date"></label>
+                <label class="storm">Storm Type <input list="storm-type" name="storm-types"></label>
+                <datalist id="storm-type">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+                <label class="storm">Storm Severity: <input type="range" value="5" min="1" max="10" step="1" 
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span></label>
+                <label class="storm">Storm Region
+                    <select name="region">
+                    <option value="">Select Region: </option>
+                    <option value="fishhaven">Fish Haven</option>
+                    <option value="preston">Preston</option>
+                    <option value="sodasprings">Soda Springs</option>
+                    </select>
+                </label>
+                <p>User in Danger?</p>
+                <div class="radiobtn">
+                    <label class="indanger storm"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="indanger storm"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                    <label class="indanger storm"><input type="radio" name="danger" value="no"> No</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="storm">Please enter any additional information here: <textarea class="storm" name="addComments" rows="5" cols="45"></textarea></label>
+                <label class="storm"><input type="checkbox" name="updated" value="yes" checked> Please send me a copy of this form and keep me updated by email on further information pertaining to this storm.</label>
+                <label class="storm"><input type="submit" class="submitBtn" name="submitBtn" value="Send information to OurWeatherHotSpot.com"></label>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="ft">
+            &copy; Our Weather Hot Spot <span id="currentYear"></span> | <a href="../index.html">Emily Lemmon</a> | <a href="https://www.byui.edu/online" target="_blank">BYUI Online</a> | <a href="../lesson10/attributions.html" target="_blank">Site Attributions</a><br>
+            <span id="date"></span>
+        </div>
+    </footer>
+    <script src="js/date-and-nav-script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({google: {families: ['Rock Salt', 'Handlee']}});
+    </script>
+    <script>
+        function adjustRating(rating) {
+        document.getElementById("ratingvalue").innerHTML = rating;}
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Gallery - Our Weather Hot Spot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery of weather related images for Our Weather Hot Spot">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/sun_and_cloud_and_lightening_sm.png " alt="Our Weather Hot Spot Logo">
+        <section class="headings">
+            <h1>Our Weather Hot Spot</h1>
+            <h3>Visit for the weather, stay for the community buzz!</h3>
+        </section>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="navBtn"><a href="../lesson11/index.html">Home</a></li>
+            <li class="navBtn"><a href="../lesson11/preston.html">Preston</a></li>
+            <li class="navBtn"><a href="../lesson11/sodasprings.html">Soda Springs</a></li>
+            <li class="navBtn"><a href="../lesson11/fishhaven.html">Fish Haven</a></li>
+            <li class="navBtn"><a href="../lesson11/stormcenter.html">Storm Center</a></li>
+            <li class="navBtn active"><a href="../lesson11/gallery.html">Gallery</a></li>   
+        </ul>
+    </nav>
+    <main>
+        <section class="gallery-page">
+            <h1>Weather Gallery</h1>
+            <div class="gallery-img">
+                <figure>
+                    <img src="https://via.placeholder.com/300x400/336699/FFFFFF.png" width="250" height="333" data-src="images/1-misty-tree.jpg" alt="Single tree in the mist">
+                    <figcaption>1: Misty mornings in Preston</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x400/336699/FFFFFF.png" width="250" height="333" data-src="images/2-clouds-forest.jpg" alt="Clouds above the trees">
+                    <figcaption>2. Beautiful day over the Lincoln Forest</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x400/336699/FFFFFF.png" width="250" height="333" data-src="images/3-storm-freeway.jpg" alt="Storm over the freeway">
+                    <figcaption>3. Storm coulds gather over I-80</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x400/336699/FFFFFF.png" width="250" height="333" data-src="images/4-apples-road.jpg" alt="Fallen Apples on the road">
+                    <figcaption>4. Apples fall to the ground on this beautiful Sunday morning</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x400/336699/FFFFFF.png" width="250" height="333" data-src="images/5-tornado-fields.jpg" alt="Tornado over the fields">
+                    <figcaption>5. A tornado just touches down in Soda Springs</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x400/336699/FFFFFF.png" width="250" height="333" data-src="images/6-sunrise-farm.jpg" alt="Sunrise on the farm">
+                    <figcaption>6. Early morning sunrise makes getting up on the farm a little easier</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x400/336699/FFFFFF.png" width="250" height="333" data-src="images/7-moon.jpg" alt="Moon over the fields">
+                    <figcaption>7. Full moon on a clear night in Fish Haven</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x400/336699/FFFFFF.png" width="250" height="333" data-src="images/8-rainy-grass.jpg" alt="Rain puddle in the grass">
+                    <figcaption>8. It's been a rainy spring this year</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x400/336699/FFFFFF.png" width="250" height="333" data-src="images/9-rainbow-hills.jpg" alt="Rainbow over the hills">
+                    <figcaption>9. The rainbow is a welcome sight after all that rain last week</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300x400/336699/FFFFFF.png" width="250" height="333" data-src="images/10-lightning.jpg" alt="Lightning lights up the night">
+                    <figcaption>10. Early summer storm brings lightning to Preston last night</figcaption>
+                </figure>
+             
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="ft">
+            <div>Days since you last visited: <span id="days">0</span></div><br>
+            &copy; Our Weather Hot Spot <span id="currentYear"></span> | <a href="../index.html">Emily Lemmon</a> | <a href="https://www.byui.edu/online" target="_blank">BYUI Online</a> | <a href="../lesson10/attributions.html" target="_blank">Site Attributions</a><br>
+            <span id="date"></span>
+        </div>
+    </footer>
+    <script src="js/date-and-nav-script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({google: {families: ['Rock Salt', 'Handlee']}});
+    </script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/last-visit.js"></script>
+</body>
+</html>

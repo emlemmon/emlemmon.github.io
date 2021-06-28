@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Soda Springs Idaho Page for Our Weather Hot Spot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page for Soda Springs Idaho in ourweatherhotspot.com that shows an image, 5 day forecast, and article, and contact information.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/sun_and_cloud_and_lightening_sm.png " alt="Our Weather Hot Spot Logo">
+        <section class="headings">
+            <h1>Our Weather Hot Spot</h1>
+            <h3>Visit for the weather, stay for the community buzz!</h3>
+        </section>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="navBtn"><a href="../lesson11/index.html">Home</a></li>
+            <li class="navBtn"><a href="../lesson11/preston.html">Preston</a></li>
+            <li class="navBtn active"><a href="../lesson11/sodasprings.html">Soda Springs</a></li>
+            <li class="navBtn"><a href="../lesson11/fishhaven.html">Fish Haven</a></li>
+            <li class="navBtn"><a href="../lesson11/stormcenter.html">Storm Center</a></li>
+            <li class="navBtn"><a href="../lesson11/gallery.html">Gallery</a></li>   
+        </ul>
+    </nav>
+    <main>
+        <h2 class="title">Soda Springs Idaho</h2>
+        <div class="herodiv">
+            <picture class="hero-img">
+                <source srcset="images/preston-pg-hero-900p.jpg" media="(min-width: 942px)">
+                <source srcset="images/preston-pg-hero-780p.jpg" media="(min-width: 600px)">
+                <img src="images/preston-pg-hero-540p.jpg" alt="Soda Springs Idaho">
+
+            </picture>
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="description"></span></p>
+                <p>Current Temp: <span id="current-temp">49</span>°F</p>
+                <p>Wind Speed: <span id="wind-speed">5</span> mph</p>
+                <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+            </section>
+        </div>
+        <div class="forecast">
+            
+            <div class="forecast-zero">
+                <h4 class="forecast-heading">Monday</h4>
+                <img id="forecast-img0" src="images/sunny.png" alt="Sun icon">
+                <p>High: <span id="forecast-span0"></span>°F</p>
+            </div>
+
+            <div class="forecast-first">
+                <h4 class="forecast-heading">Tuesday</h4>
+                <img id="forecast-img1" src="images/sunny.png" alt="Sun icon">
+                <p>High: <span id="forecast-span1"></span>°F</p>
+            </div>
+
+            <div class="forecast-second">
+                <h4 class="forecast-heading">Wednesday</h4>
+                <img id="forecast-img2" src="images/windy.png" alt="Sun icon">
+                <p>High: <span id="forecast-span2"></span>°F</p>   
+            </div>
+
+            <div class="forecast-third">
+                <h4 class="forecast-heading">Thursday</h4>
+                <img id="forecast-img3" src="images/sun_and_cloud_and_lightening_sm.png" alt="Sun icon">
+                <p>High: <span id="forecast-span3"></span>°F</p>
+            </div>
+            
+            <div class="forecast-fourth">
+                <h4 class="forecast-heading">Friday</h4>
+                <img id="forecast-img4" src="images/rainy.png" alt="Sun icon"> 
+                <p>High: <span id="forecast-span4"></span>°F</p> 
+            </div>
+
+        </div>
+        <div class="article">
+            <h3>My Article Title</h3>            
+            <img class="article-img" src="images/red-sunflower-sm.jpg" alt="Red Sunflower">
+            <p>Article Author</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor eros sed laoreet gravida. Proin non iaculis dolor, vel consectetur est. Praesent sollicitudin tempor magna et venenatis. Proin fringilla lacus sit amet semper rutrum. Sed fermentum imperdiet risus. Nunc mollis tortor dolor, eget semper eros auctor eu. Vivamus at eros eros. Integer elit massa, facilisis sagittis leo quis, cursus viverra tortor. Nam hendrerit lorem nec est gravida, id porttitor metus varius. Etiam feugiat, justo ac ullamcorper sollicitudin, lacus risus consectetur lectus, at volutpat lorem est et purus. Duis vulputate gravida sapien, sit amet finibus mi semper non. Nulla pellentesque eget nisi id condimentum. Mauris viverra, ipsum nec finibus tincidunt, urna erat lacinia orci, eget euismod velit lacus nec libero. Curabitur scelerisque eros id metus tincidunt semper.<br>
+                <br>
+                Cras in fermentum nisi, vitae condimentum dolor. Sed ac nisi euismod, hendrerit augue non, bibendum turpis. Vestibulum accumsan dolor ultrices tortor ultricies rhoncus. Aliquam vitae arcu vitae elit rhoncus tempor nec vitae mi. Donec ipsum ipsum, gravida vitae fringilla sit amet, pharetra vitae metus. Etiam a diam lacus. Nulla bibendum sapien sem, ut viverra quam dapibus eu. Aenean gravida viverra pulvinar. Nunc vitae tellus non ligula molestie pharetra. Pellentesque sit amet condimentum lectus. Ut egestas sapien risus, non consectetur sapien facilisis non. Quisque id imperdiet lectus. Cras eu neque ut libero placerat condimentum.<br>
+                <br>
+                Nunc vitae turpis quis eros lacinia sodales. Maecenas euismod libero vitae ex sollicitudin pulvinar. Maecenas dui diam, sollicitudin id erat at, laoreet tempus purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dignissim magna, sed sodales nunc cursus eu. Cras varius, nulla vitae maximus gravida, turpis quam facilisis massa, sed condimentum nisl lacus non enim. Proin euismod ipsum vel auctor vehicula. Nam in lacus accumsan, tristique augue eget, ultrices turpis. Mauris euismod orci velit, gravida aliquet nisl sagittis in. Sed elementum, urna non faucibus sodales, libero odio euismod turpis, id ornare risus ex a ligula. Nullam nisi dolor, porta non dolor at, congue pretium enim.<br>
+                <br>
+                Integer sodales lorem urna, id vestibulum tortor feugiat in. Donec id sollicitudin orci, fringilla venenatis mauris. Mauris dapibus nulla justo, id hendrerit ante lobortis id. Quisque fringilla suscipit fringilla. Pellentesque sed lacinia diam. Nunc egestas auctor mauris. Vestibulum sit amet vestibulum tellus, in vulputate lectus. Aliquam ultricies orci nec nulla venenatis, eget gravida ipsum congue. Duis efficitur, nisl in cursus aliquet, augue urna placerat augue, a facilisis orci nibh et odio.<br>
+               
+        </div>
+        <div class="contact-info">
+            <img class="map-img" src="images/denver-map.png" alt="Map of Denver, Colorado">
+            <section class="contact-info-text">
+                <h4>Our Weather Hot Spot</h4>
+                <span>301 North 50th West</span><br>
+                <span>Denver, Colorado 80216</span><br>
+                <br>
+                <span>📞 555-555-5555</span><br>
+                <span>📧 ourweatherhotspot.gmail.com</span><br>
+                <br>
+                <a class="social-media" href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram icon"></a>
+                <a class="social-media" href="https://www.twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter icon"></a>
+                <a class="social-media" href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook icon"></a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="ft">
+            &copy; Our Weather Hot Spot <span id="currentYear"></span> | <a href="../index.html">Emily Lemmon</a> | <a href="https://www.byui.edu/online" target="_blank">BYUI Online</a> | <a href="../lesson10/attributions.html" target="_blank">Site Attributions</a><br>
+            <span id="date"></span>
+        </div>
+    </footer>
+    <script src="js/date-and-nav-script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+       WebFont.load({google: {families: ['Rock Salt', 'Handlee']}});
+    </script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/windchill.js"></script>
+
+</body>
+</html>
