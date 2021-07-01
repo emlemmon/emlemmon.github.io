@@ -8,9 +8,9 @@ fetch(requestURL)
     //console.table(jsonObject);  //temporary checking for valid response and data parsing
     
     const customImages = {
-        "Preston": {order: 0, src: "images/monica-bourgeau-QrgRXH81DXk-unsplash.jpg", alt: "Downtown Preston" },
+        "Preston": {order: 0, src: "images/hm-prest-monica-bourgeau.jpg", alt: "Downtown Preston" },
         "Soda Springs": { order: 1, src: "images/illiya-vjestica-BJzV7Ie6YBY-unsplash.jpg", alt: "Soda Springs Farmland" },
-        "Fish Haven": { order: 2, src: "images/timothy-eberly-XemjjFd_4qE-unsplash.jpg", alt: "Sunrise in Fish Haven" },
+        "Fish Haven": { order: 2, src: "images/hm-fish-timothy-eberly-386x262.jpg", alt: "Sunrise in Fish Haven" },
     }
 
     const towns = jsonObject['towns'].filter(item => customImages[item.name]);
