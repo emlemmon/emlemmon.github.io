@@ -28,8 +28,13 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
     }
-    div.towns section img {
-        width: 100%;
+    .town-info div.towns section img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        float: none;
+        padding: 0;
     }
     .contact-info {
         max-width: 1030px;

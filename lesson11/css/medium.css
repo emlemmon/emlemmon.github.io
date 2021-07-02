@@ -83,7 +83,8 @@
         overflow: hidden;
     }
     div.towns section img {
-        max-width: 370px;
+        max-width: 60%;
+        max-height: none;
     }
     div.towns section:nth-child(odd) img{
         float: left;

@@ -1,6 +1,6 @@
 body {
     background-color: #FEED72;
-    font-family: 'Handlee', sans-serif;
+    font-family: 'Handlee', Roboto, sans-serif;
 }
 
 header {
@@ -18,7 +18,7 @@ main {
     padding: 0 12px;
 }
 h1, h2, h3 {
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Rock Salt', Segoe Script, cursive;
     letter-spacing: .1em;
 }
 .title {
@@ -219,7 +219,13 @@ div.towns section {
     max-width: 550px;
 }
 div.towns section img {
-    max-width: 420px;
+    display: block;
+    margin: 5px auto;
+    max-width: 386px;
+    max-height: 262px;
+    width: 96%;
+    height: 96%;
+    padding: 10px;
 }
 
 

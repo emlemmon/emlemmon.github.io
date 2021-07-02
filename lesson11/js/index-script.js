@@ -8,9 +8,9 @@ fetch(requestURL)
     //console.table(jsonObject);  //temporary checking for valid response and data parsing
     
     const customImages = {
-        "Preston": {order: 0, src: "images/hm-prest-monica-bourgeau.jpg", alt: "Downtown Preston" },
-        "Soda Springs": { order: 1, src: "images/illiya-vjestica-BJzV7Ie6YBY-unsplash.jpg", alt: "Soda Springs Farmland" },
-        "Fish Haven": { order: 2, src: "images/hm-fish-timothy-eberly-386x262.jpg", alt: "Sunrise in Fish Haven" },
+        "Preston": {order: 0, src: "images/hm-prest-monica-bourgeau.jpg", alt: "Downtown Preston", width: "386px", height: "261px"},
+        "Soda Springs": { order: 1, src: "images/hm-soda-illiya-386x262.jpg", alt: "Soda Springs Farmland", width: "386px", height: "262px" },
+        "Fish Haven": { order: 2, src: "images/hm-fish-timothy-eberly-386x262.jpg", alt: "Sunrise in Fish Haven", width: "386px", height: "262px" },
     }
 
     const towns = jsonObject['towns'].filter(item => customImages[item.name]);
@@ -35,6 +35,8 @@ fetch(requestURL)
         let custom_img = customImages[towns[i].name];
         image.setAttribute("src", custom_img.src);
         image.setAttribute("alt", custom_img.alt);
+        image.setAttribute("width", custom_img.width);
+        image.setAttribute("height", custom_img.height);
 
 
         card.appendChild(name);
