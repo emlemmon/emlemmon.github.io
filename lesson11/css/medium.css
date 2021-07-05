@@ -64,7 +64,7 @@
     .map-img {
         display: block;
         justify-content: right;
-        margin: 0 auto;
+        margin: auto;
         padding: .5rem;   
     }
     .contact-info-text {

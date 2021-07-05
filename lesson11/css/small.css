@@ -60,7 +60,7 @@ header img {
 
 .contact-info {
     background-color:#FFB833;
-    margin: 0px -12px;
+    margin: auto;
 }
 .map-img {
     display: none;
@@ -75,6 +75,8 @@ header, footer {
 }
 footer {
     padding: .5rem;
+    max-width: 1030px;
+    margin: auto;
 }
 footer a, footer a:visited {
     color: black;
@@ -229,7 +231,7 @@ div.towns section img {
 }
 
 
-/*Preston CSS*/
+/*Preston, Soda Springs, and FIsh Haven CSS*/
 
 .ifFriday {
     display: none;
@@ -237,18 +239,26 @@ div.towns section img {
     font-size: larger;
     text-align: center;
 }
-.weather-summary {
+.weather-summary, .town-events {
     background-color: #FFB83366;
     border: 3px solid #a06800;
 }
-.weather-summary p {
+.weather-summary p, .town-events p {
     line-height: .2rem;
+    font-weight: bold;
+    margin: 15px;
+    padding: .1rem;
+}
+.town-events p {
+    padding-left: 50px;
+}
+.town-events {
+    max-width: 780px;
+    margin: 12px auto;
 }
     
-.weather-summary h3 {
+.weather-summary h3, .town-events h3 {
     border-bottom-style: solid;
-}
-.weather-summary p, .weather-summary h3 {
     font-weight: bold;
     margin: 15px;
     padding: .1rem;
