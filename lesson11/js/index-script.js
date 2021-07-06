@@ -5,7 +5,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    //console.table(jsonObject);  //temporary checking for valid response and data parsing
+
     
     const customImages = {
         "Preston": {order: 0, src: "images/hm-prest-monica-bourgeau.jpg", alt: "Downtown Preston", width: "386px", height: "261px"},

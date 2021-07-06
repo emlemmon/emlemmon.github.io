@@ -4,7 +4,6 @@ function load_weather(location_id) {
   fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-      console.log(jsObject);  
 
       document.getElementById('description').textContent = jsObject.weather[0].main;
       document.getElementById('current-temp').textContent = jsObject.main.temp;
@@ -12,9 +11,9 @@ function load_weather(location_id) {
       document.getElementById('humidity').textContent = jsObject.main.humidity;
       document.getElementById('current-temp').textContent = jsObject.main.temp;    
 
-      const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-      const desc = jsObject.weather[0].description;  // note how we reference the weather array
-      document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+      const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  
+      const desc = jsObject.weather[0].description; 
+      document.getElementById('icon').setAttribute('src', imagesrc);  
       document.getElementById('icon').setAttribute('alt', desc);
     });
 
@@ -23,8 +22,6 @@ function load_weather(location_id) {
   fetch(forecastAPI_URL)
     .then((response) => response.json())
     .then((jsObject) => {
-
-      console.log(jsObject);
 
       const forecast_data = jsObject['list'].filter(item => item.dt_txt.endsWith("18:00:00"));
       for (let i = 0; i < forecast_data.length; i++) {
