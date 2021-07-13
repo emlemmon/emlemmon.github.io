@@ -1,0 +1,101 @@
+{
+    "businesses": [
+        {
+            "name": "Apex Center",
+            "number": "303-424-2739",
+            "address": "13150 W. 72nd Ave Arvada, CO 80005",
+            "website": "https://apexprd.org/facility/apex-center/",
+            "email": "Info@ApexPRD.org",
+            "logo": {
+                "src": "./lesson12/images/apex-logo.png",
+                "alt": "Apex Logo"
+            },
+            "description": "The Apex Center boasts 23,000 square feet of indoor water fun: body and tube slide rides, zero-depth water playground, vortex pool, activity pool, lap pool, adult and family hot tubs. We also have a gym, an indoor track, a child watch center, 2 indoor ice skating rinks, and a rock climbing wall. We can't wait to see you come enjoy our facilities!"
+        },
+        {
+            "name": "Arvada Center for the Arts",
+            "number": "720-898-7200",
+            "address": "6901 Wadsworth Blvd. Arvada, Colorado 80003",
+            "website": "https://arvadacenter.org/",
+            "email": "info@arvadacenter.org",
+            "logo": {
+                "src": "./lesson12/images/arvada-center-logo.png",
+                "alt": "Arvada Center Logo"
+            },
+            "description": "The Arvada Center produces, curates, and creates national-caliber arts, humanities, education, and entertainment that are designed to help you see, hear, feel, and think a little deeper. Here, there’s truly something for everyone. You’ll find something you can not only relate to, but something that resonates—no matter who you are, no matter where you’re from."
+        },
+        {
+            "name": "Bliss",
+            "number": "303-284-4003",
+            "address": "11651 W 64TH AVE ARVADA, CO 80004",
+            "website": "http://blissfroyo.com/",
+            "email": "hello@blissfroyo.com",
+            "logo": {
+                "src": "./lesson12/images/bliss-logo.png",
+                "alt": "Bliss Logo"
+            },
+            "description": "We are family owned and operated and our small business has been serving the Arvada community since 2011.  We love to link arms with the community through fundraising efforts and employment of our young people. With 10 flavors and over 40 toppings, there are thousands of delicious combinations you can create!"
+        },
+        {
+            "name": "Fuzzy's Taco Shop",
+            "number": "303-438-9997",
+            "address": "5760 Olde Wadsworth Blvd Arvada, CO 80002",
+            "website": "fuzzystacoshop.com",
+            "email": null,
+            "logo": {
+                "src": "./lesson12/images/fuzzys-logo.png",
+                "alt": "Fuzzy's Logo"
+            },
+            "description": "The original Fuzzy’s Taco Shop is on Berry Street in Fort Worth, Texas. It was there that a glorious vision of taco heaven took hold in 2003: It would have frosty drinks. It would have good vibes. It would be the kind of place that you never want to leave. It would be a huge, craving-inducing success. Today, people bring their dogs, party on our patios and feel the festive love every time they walk into a Fuzzy’s. And with locations popping up nationwide, our Baja tacos, Chips & Guac, and frozen margaritas are always within reach."
+        },
+        {
+            "name": "Olde Town Flower Shoppe",
+            "number": "303-424-3033",
+            "address": "7505 Grandview Ave B Arvada CO 80002",
+            "website": "https://oldetownflowers.com/",
+            "email": "arvadaflowers@gmail.com",
+            "logo": {
+                "src": "./lesson12/images/oldetownflowershoppe-logo.png",
+                "alt": "Olde Town Flowers Logo"
+            },
+            "description": "Olde Town Flower Shoppe is located on Grandview Avenue in the heart of Olde Town Arvada. It is owned and operated by two women who live in and LOVE Arvada! We take great pride in our customer service and floral design and will work to make sure you have the best experience possible. We are happy to serve Arvada and many surrounding areas, providing customized designs for weddings, funerals, events big and small, as well as everyday occasions."
+        },
+        {
+            "name": "Schoolhouse Kitchen and Libations",
+            "number": "720-639-4213",
+            "address": "5660 Olde Wadsworth Blvd. Arvada, CO 80002",
+            "website": "https://www.schoolhousearvada.com/",
+            "email": "schoolhousearvada@gmail.com",
+            "logo": {
+                "src": "./lesson12/images/schoolhouse-logo.png",
+                "alt": "Schoolhouse Logo"
+            },
+            "description": "School House Kitchen & Libations is located in the heart of Historic Olde Town Arvada. Built inside of the original Arvada schoolhouse, which was constructed in 1882, School House offers over 1,800 different whiskeys, over 50 beers, and a sizable menu that is sure to please all. With the Library Bar, Home Room dining area, upstairs Teachers Lounge, and plenty of outdoor seating, including Arvada's first rooftop patio, School House is sure to be your favorite school memory."
+        },
+        {
+            "name": "Scrumptious",
+            "number": "303-431-2639",
+            "address": "7523 Grandview Ave. Arvada CO, 80002",
+            "website": "http://www.scrumptiousco.com/",
+            "email": "scrumptiousiecreamandcandy@gmail.com ",
+            "logo": {
+                "src": "./lesson12/images/scrumptious-logo.png",
+                "alt": "Scrumptious Logo"
+            },
+            "description": "Ice cream and candy and soda, oh my! These delicious treats aren't just for kids. We all have taste buds, and they need special attention. Taste buds have needs too, so come on down to Scrumptious located in Olde Town Arvada, and give your buds the treatment they need!"
+        },
+        {
+            "name": "Woody's Lawn Sprinklers",
+            "number": "303-463-4600",
+            "address": "6626 Wadsworth Blvd. Arvada, CO 80003",
+            "website": "http://www.woodyslawnsprinklers.com/",
+            "email": "office@woodyslawnsprinklers.com",
+            "logo": {
+                "src": "./lesson12/images/woodys-logo.png",
+                "alt": "Woody's Logo"
+            },
+            "description": "Mike Woods is the proud owner of Woody’s Lawn Sprinklers. We have operated out of Arvada since 1980. We are a family owned company. We will provide professional, knowledgeable & quality services that are financially affordable to our customers, offering money saving technology & pricing programs within our company and insuring we do our part in helping our customers save money, water resources and the environment for our future generations."
+        }
+
+    ]
+}

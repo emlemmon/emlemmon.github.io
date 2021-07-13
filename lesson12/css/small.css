@@ -1,0 +1,45 @@
+body {
+    background-color: #14507b;
+    font-family: 'Lato', 'Lucida Sans', Verdana, sans-serif;
+}
+.background-color {
+    background-color: #F3EBE2;
+    margin: 10px;
+    border: 10px solid #B3E6D5;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Marcellus', 'Times New Roman', Times, serif;
+}
+
+
+/*******Navigation********/
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    text-align: center; 
+}
+
+/*******Typography info page*******/
+.typography-headings {
+    font-family: 'Marcellus', 'Times New Roman', Times, serif;
+}
+.typography-text {
+    font-family: 'Lato', 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+.typography-pg {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: #F3EBE2;
+    border: 5 px solid #659B5E;
+}

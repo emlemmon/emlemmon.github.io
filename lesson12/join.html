@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arvada Colorado Chamber of Commerce</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for Arvada Colorado Chamber of Commerce, an online place for local business to gather and advertise and foster a sense of community and neighborhood pride and ownership.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div class="background-color">
+        <header class="headers">
+            <img src="images/A-logo-200x200.png" alt="Arvada Chamber of Commerce Logo" width="200" height="200">
+            <h1>Arvada Chamber of Commerce</h1>
+            <nav class="nav">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li class="navBtn active"><a href="../lesson12/index.html">Home</a></li>
+                    <li class="navBtn"><a href="../lesson12/city.html">City of Arvada</a></li>
+                    <li class="navBtn"><a href="../lesson12/join.html">Join our Community</a></li>
+                    <li class="navBtn"><a href="../lesson12/directory.html">Business Directory</a></li>
+                    <li class="navBtn"><a href="../lesson12/contact.html">Contact Information</a></li>
+                    <li class="navBtn searchBar"><input type="text" placeholder="Search..."></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <h2>Join Our Community</h2>
+                <p>If you've been pondering becoming a member of the Arvada Chamber of Commerce, then we say, "Welcome!" We'd love to have you!<br>There are many reasons to join our chamber, but the first that comes to mind is the chance to be a part of a close-knit, supportive community. Arvada is a beautiful city with a lot of growth, and joining the Chamber of Commerce is a great way to be a part of that growth and action. There will be oppurtunities to get to know the other local business owners, networking and creating friendships and partnerships, as well as promote your business to the community at large.</p>
+            </div>
+            <form action="confirmation.html" method="GET">
+                <h3>To become a member of the Arvada Chamber of Commerce, please fill out the following information and a board memeber will get back to you.</h3>
+                <fieldset>
+                    <legend><h3>Personal Information</h3></legend>
+                    <p>Tell us all about you:</p><br>
+                    <label class="top">First Name* <input type="text" name="fname" pattern="[A-Za-z ]" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" pattern="[A-Za-z ]" required></label>
+                    <label class="top title">Preferred Title
+                        <select name="title">
+                        <option value=""> </option>
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="ms">Ms</option>
+                        <option value="dr">Dr</option>
+                        </select>
+                    </label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+
+                </fieldset>
+                <fieldset>
+                    <legend><h3>Company Information</h3></legend>
+                    <p>Tell us all about your business:</p><br>
+                    <label class="middle">Business Name* <input type="text" name="compName" required></label>
+                    <label class="middle">Business Address <input type="text" name="address"></label>
+                    <label class="middle">Business Website <input type="text" name="address"></label>
+                    <label class="middle">Please describe your business here: <textarea class="storm" name="addComments" rows="5" cols="45"></textarea></label>
+                    <label class="membership-level middle">Membership Level <input list="member-lvl" name="member-level"></label>
+                    <datalist id="member-lvl">
+                        <option value="Non-Profit: $100"></option>
+                        <option value="Bronze: $200"></option>
+                        <option value="Silver: $400"></option>
+                        <option value="Gold: $1000"></option>
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend><h3>Additional Information</h3></legend>
+                    <p>Do you have any questions for us or additional information you think we should know? Tell us here: </p><br>
+                    <label class="bottom"><textarea class="storm" name="addComments" rows="5" cols="45"></textarea></label>
+                    <label class="bottom"><input type="checkbox" name="updated" value="yes" checked> Please keep me updated by email on further information regarding my membership status.</label>
+                    <input type="submit" class="submitBtn bottom" name="submitBtn" value="Click to Become a Member">
+                </fieldset>
+            </form>
+        </main>
+        <footer class="ft">
+            <div class="contact-info"><h4>Contact Us:</h4>
+                <p>arvadacoc1@gmail.com</p>
+                <p>720-555-1234</p>
+                <p>123 Old Wadsworth<br>Arvada, CO 80003</p>
+            </div>
+            
+            <a class="social-media" href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram icon" width="24" height="24"></a>
+            <a class="social-media" href="https://www.twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter icon" width="24" height="24"></a>
+            <a class="social-media" href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook icon" width="24" height="24"></a>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12261.340682552805!2d-105.08192916113288!3d39.79947294524046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626115483461!5m2!1sen!2sus" width="400" height="300" style="border: 1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+       WebFont.load({google: {families: ['Lato', 'Marcellus']}});
+    </script>
+</body>
+</html>
