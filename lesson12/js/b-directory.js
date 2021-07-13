@@ -1,5 +1,5 @@
 function getBusinessData() {
-    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    const requestURL = "https://emlemmon.github.io/lesson12/js/directory-info.json";
 
     fetch(requestURL)
     .then(function (response) {
@@ -7,25 +7,37 @@ function getBusinessData() {
     })
     .then(function (jsonObject) {
        
-        const town = jsonObject['towns'].find(item => item.name == townName);
+        const businesses = jsonObject['businesses']
         
-        let card = document.createElement('section');
-        let title = document.createElement('h3');
+        for (let i = 0; i < businesses.length; i++) {
+            let card = document.createElement('section');
+            let name = document.createElement('h3');
+            let phone = document.createElement('p');
+            let website = document.createElement('p');
+            let address = document.createElement('p');
+            let description = document.createElement('p');
+            let logo = document.createElement('img');
 
-        title.textContent = town.name + " Upcoming Events";
-        card.appendChild(title)
+            name.textContent = businesses[i].name;
+            phone.textContent = businesses[i].number;
+            website.textContent = businesses[i].website;
+            address.textContent = businesses[i].address;
+            description.textContent = businesses[i].description;
+            logo.setAttribute("src", businesses[i].logo.source);
+            logo.setAttribute("alt", businesses[i].logo.alt);
+            logo.setAttribute("width", businesses[i].logo.width);
+            logo.setAttribute("height", businesses[i].logo.height);
 
-        for (let i = 0; i < town.events.length; i++) {
-            let indEvent = document.createElement('p');
-            indEvent.textContent = town.events[i];
-            card.appendChild(indEvent);
-        }
-        document.querySelector('div.town-events').appendChild(card);
+            card.appendChild(name);
+            card.appendChild(logo);
+            card.appendChild(website);
+            card.appendChild(phone);
+            card.appendChild(address);
+            card.appendChild(description);
+
+            document.querySelector("div.businesses-directory").appendChild(card);
+            
+          }
     })
 }
-
-const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-    const desc = jsObject.weather[0].description;  // note how we reference the weather array
-    //document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-    document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-    document.getElementById('icon').setAttribute('alt', desc);
+getBusinessData();
