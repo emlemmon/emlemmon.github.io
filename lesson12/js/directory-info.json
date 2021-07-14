@@ -7,7 +7,7 @@
             "website": "https://apexprd.org/facility/apex-center/",
             "email": "Info@ApexPRD.org",
             "logo": {
-                "src": "../images/apex-logo-sm.png",
+                "src": "images/apex-logo-sm.png",
                 "alt": "Apex Logo",
                 "width": 320,
                 "height": 166
@@ -21,7 +21,7 @@
             "website": "https://arvadacenter.org/",
             "email": "info@arvadacenter.org",
             "logo": {
-                "src": "./lesson12/images/arvada-center-logo.png",
+                "src": "images/arvada-center-logo.png",
                 "alt": "Arvada Center Logo",
                 "width": 323,
                 "height": 150
