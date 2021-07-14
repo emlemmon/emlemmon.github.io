@@ -35,7 +35,7 @@
             "website": "http://blissfroyo.com/",
             "email": "hello@blissfroyo.com",
             "logo": {
-                "src": "./lesson12/images/bliss-logo.png",
+                "src": "images/bliss-logo.png",
                 "alt": "Bliss Logo",
                 "width": 250,
                 "height": 106
@@ -49,7 +49,7 @@
             "website": "fuzzystacoshop.com",
             "email": null,
             "logo": {
-                "src": "./lesson12/images/fuzzys-logo.png",
+                "src": "images/fuzzys-logo.png",
                 "alt": "Fuzzy's Logo",
                 "width": 202,
                 "height": 116
@@ -63,7 +63,7 @@
             "website": "https://oldetownflowers.com/",
             "email": "arvadaflowers@gmail.com",
             "logo": {
-                "src": "./lesson12/images/oldetownflowershoppe-logo-sm.png",
+                "src": "images/oldetownflowershoppe-logo-sm.png",
                 "alt": "Olde Town Flowers Logo",
                 "width": 220,
                 "height": 202
@@ -77,7 +77,7 @@
             "website": "https://www.schoolhousearvada.com/",
             "email": "schoolhousearvada@gmail.com",
             "logo": {
-                "src": "./lesson12/images/schoolhouse-logo-sm.png",
+                "src": "images/schoolhouse-logo-sm.png",
                 "alt": "Schoolhouse Logo",
                 "width": 200,
                 "height": 236
@@ -91,7 +91,7 @@
             "website": "http://www.scrumptiousco.com/",
             "email": "scrumptiousiecreamandcandy@gmail.com ",
             "logo": {
-                "src": "./lesson12/images/scrumptious-logo.png",
+                "src": "images/scrumptious-logo.png",
                 "alt": "Scrumptious Logo",
                 "width": 321,
                 "height": 86
@@ -105,7 +105,7 @@
             "website": "http://www.woodyslawnsprinklers.com/",
             "email": "office@woodyslawnsprinklers.com",
             "logo": {
-                "src": "./lesson12/images/woodys-logo-sm.png",
+                "src": "images/woodys-logo-sm.png",
                 "alt": "Woody's Logo",
                 "width": 351,
                 "height": 68

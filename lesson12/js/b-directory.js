@@ -1,5 +1,5 @@
 function getBusinessData() {
-    const requestURL = "https://emlemmon.github.io/lesson12/js/directory-info.json";
+    const requestURL = "https://emlemmon.github.io/lesson12/directory-info.json";
 
     fetch(requestURL)
     .then(function (response) {
