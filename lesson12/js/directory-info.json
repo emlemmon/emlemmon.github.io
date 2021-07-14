@@ -7,7 +7,7 @@
             "website": "https://apexprd.org/facility/apex-center/",
             "email": "Info@ApexPRD.org",
             "logo": {
-                "src": "https://emlemmon.github.io/lesson12/images/apex-logo-sm.png",
+                "src": "../images/apex-logo-sm.png",
                 "alt": "Apex Logo",
                 "width": 320,
                 "height": 166
