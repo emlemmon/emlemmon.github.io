@@ -23,7 +23,7 @@ function getBusinessData() {
             website.textContent = businesses[i].website;
             address.textContent = businesses[i].address;
             description.textContent = businesses[i].description;
-            logo.setAttribute("src", businesses[i].logo.source);
+            logo.setAttribute("src", businesses[i].logo.src);
             logo.setAttribute("alt", businesses[i].logo.alt);
             logo.setAttribute("width", businesses[i].logo.width);
             logo.setAttribute("height", businesses[i].logo.height);
