@@ -309,19 +309,3 @@ label input:invalid {
     text-align: center;
     padding: .8rem
 }
-
-/*******Typography info page*******/
-
-.typography-headings {
-    font-family: 'Marcellus', 'Times New Roman', Times, serif;
-}
-.typography-text {
-    font-family: 'Lato', 'Lucida Sans', Geneva, Verdana, sans-serif;
-}
-.typography-pg {
-    max-width: 700px;
-    margin: auto;
-    padding: 20px;
-    background-color: #F3EBE2;
-    border: 5 px solid #659B5E;
-}
