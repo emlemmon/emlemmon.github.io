@@ -129,7 +129,6 @@ nav button, .submitBtn{
 .gridForIndex {
     display: block;
     margin: 10px auto;
-    padding: auto;
 }
 .gridForIndex section {
     background-color: #E3F3F3;
@@ -159,7 +158,6 @@ nav button, .submitBtn{
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-gap: 1rem;
     margin: 10px auto;
-    padding: auto;
 }
 .ads{
     background-color: #F3EBE2;
@@ -201,7 +199,6 @@ nav button, .submitBtn{
     display: none;
 }
 .history img {
-    display: float;
     float: left;
     margin-right: .8rem;
     width: 65%;
