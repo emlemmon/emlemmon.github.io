@@ -1,3 +1,84 @@
 @media only screen and (min-width: 60em) {
 
+.main-pic img {
+    max-width: 1200px;
+}
+.gridForIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+header h1 {
+    font-size: 2.5em;
+}
+/******City******/
+.history img {
+    max-width: 555px;
+    max-height: 389px;
+}
+.current-events div:nth-child(3) {
+    display: float;
+    float: right;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+/******Join******/
+
+.join-form {
+    grid-template-columns: 1fr 1fr;
+}
+fieldset {
+    padding-left: 4rem;
+}
+
+/******Directory******/
+
+
+/******Footer******/
+
+.ft {
+    border-top: 10px solid #B3E6D5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .4rem;
+}
+.contact-info {
+    margin: .5rem auto;
+}
+.quote {
+    grid-column: span 1;
+}
+.quote h4 {
+    display: block;
+}
+
+/*****Navigation******/
+nav button {
+    display: none;
+}
+nav ul.hide {
+    display: flex;
+}
+nav ul {
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+    flex: 1;
+}
+nav ul li a {
+    border: none;
+    padding: .8rem 1rem;
+}
+.headers {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: .6rem;
+}
+.nav h1{
+    size: 3rem;
+    text-align: center;
+}
+    
 }

@@ -12,71 +12,109 @@
 </head>
 <body>
     <div class="background-color">
-        <div class="weather-alert"></div>
+        <div id="weather-alert" class="weather-alert">
+            <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <p id="alert-title"></p>
+            <p id="alert-p"></p>
+        </div>
         <header class="headers">
             <img src="images/A-logo-200x200.png" alt="Arvada Chamber of Commerce Logo" width="200" height="200">
-            <h1>Arvada Chamber of Commerce</h1>
+            
             <nav class="nav">
-                <button onclick="toggleMenu()">&#9776;</button>
+                <h1>Arvada Chamber of Commerce</h1>
+                <button onclick="toggleMenu()">&#9776; MENU </button>
                 <ul id="primaryNav" class="hide">
                     <li class="navBtn active"><a href="../lesson12/index.html">Home</a></li>
-                    <li class="navBtn"><a href="../lesson12/city.html">City of Arvada</a></li>
-                    <li class="navBtn"><a href="../lesson12/join.html">Join our Community</a></li>
-                    <li class="navBtn"><a href="../lesson12/directory.html">Business Directory</a></li>
-                    <li class="navBtn"><a href="../lesson12/contact.html">Contact Information</a></li>
-                    <li class="navBtn searchBar"><input type="text" placeholder="Search..."></li>
+                    <li class="navBtn"><a href="../lesson12/city.html">Our City</a></li>
+                    <li class="navBtn"><a href="../lesson12/join.html">Join Us</a></li>
+                    <li class="navBtn"><a href="../lesson12/directory.html">Directory</a></li>
+                    <li class="navBtn"><a href="../lesson12/contact.html">Contact Info</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <img src="images/olde-town-at-night.jpg" alt="Olde Town Arvada at Night" width="1281" height="779">
+            <picture class="main-pic">
+                <source srcset="images/olde-town-at-night.jpg" media="(min-width: 942px)">
+                <source srcset="images/olde-town-at-night-781.jpg" media="(min-width: 620px)">
+                <img src="images/olde-town-at-night540x329.jpg" alt="Olde Town Arvada at Night">
+            </picture>
+
             <div class="gridForIndex">
                 <section class="grid1 description">
                     <h3>All about our Chamber</h3>
+                    <p>The Chamber of Commerce in Arvada has been serving the businesses an residents here for over 35 years. Founded by Kat Johnsen, an Arvada native, when she was only 22, the Chamber has grown to become the most used business resource in the area. We support our citizens by supporting their companies. Our hands on approach to being there for every one of our members is said to be the best part of being a member of the Arvada Chamber of Commerce. We know you love Arvada as much as we do, and we'll always be here to help support our fiscal community.</p>
                 </section>
                 <section class="grid2 arvPict">
-                    <img src="images/water-tower-pink-sky.jpg" alt="Arvada Water Tower in Pink Sky" width="400" height="300">
+                    <img src="images/water-tower-pink-sky-sq-280x280.jpg" alt="Arvada Water Tower in Pink Sky" width="400" height="300">
                 </section>
                 <section class="grid3 callToJoin">
                     <h3>Join us Today!</h3>
+                    <p>You are already a part of our community. Now become a part of a group that will support you, advertise with you, and help you grow your business and community contacts. You know you want to!</p>
+                    <button class="join-buttton" onclick="location.href='./join.html'" value="Go to Join page">Join Today!</button>
                 </section>
                 <section class="grid4 arvPict">
-                    <img src="images/Fuzzys_Kent_Kanouse.jpg" alt="Fuzzy's Taco Shop in Olde Town" width="400" height="300">
+                    <img src="images/Fuzzys_at-night-sq-280x280.jpg" alt="Fuzzy's Taco Shop in Olde Town" width="400" height="300">
                 </section>
                 <section class="grid5 hist_currentEvents">
                     <h3>Arvada History</h3>
-                    <p>All about Arvada</p>
+                    <p>The roots of Arvada, Colorado go back to June 22, 1850, when Lewis Ralston made the first documented discovery of gold in Colorado. Ralston didn’t stay to capitalize on his discovery, but in 1858, he guided a group of gold seekers back to the banks of the creek which now bore his name.</p>
                     <h4>Current Events</h4>
+                    <ul class="current-events-list">
+                        <li>July 26 - City Council Meeting</li>
+                        <li>July 26 - Majestic Gardens Tai Chi</li>
+                        <li>Aug 20 - Movies Around Town</li>
+                        <li>Aug 21 - Arvada Days Festival</li>
+                    </ul>
+                    <p><a href="./city.html">See more</a></p>
                 </section>
                 <section class="grid6 arvPict">
-                    <img src="images/Olde_Town_Square,_Arvada,_CO.jpg" alt="Splash Pad at Olde Town Arvada" width="400" height="300">
+                    <img src="images/Olde_Town_Square,_Arvada,_CO-sq-280x280.jpg" alt="Splash Pad at Olde Town Arvada" width="400" height="300">
                 </section>
                 <section class="grid7 busAds">
-                    <div class="ads">Ad 1</div>
-                    <div class="ads">Ad 2</div>
-                    <div class="ads">Ad 3</div>
-                    <div class="ads">Ad 4</div>
+                    <div class="adsContainer">
+                        <div class="ads">
+                            <img src="images/ice-cream-sq-220x220.jpg" alt="Ice cream cone" width="220" height="220">
+                            <h3>Scrumptious</h3>
+                            <p>Come try our delectable ice cream and candy. New flavors every week are sure to please!</p>
+                        </div>
+                        <div class="ads">
+                            <img src="images/flowers-sq-220x220.jpg" alt="Flowers in pitcher" width="220" height="220">
+                            <h3>Olde Town Flower Shoppe</h3>
+                            <p>We have your flower needs covered from graduation flowers to sympathy bouquets.</p>
+                        </div>
+                        <div class="ads">
+                            <img src="images/sprinkler-sq-220x220.jpg" alt="Sprinkler over grass" width="220" height="220">
+                            <h3>Woodys</h3>
+                            <p>Let's keep those lawns green with an updated sprinkler system that will save you time and money.</p>
+                        </div>
+                        <div class="ads">
+                            <img src="images/tacos-sq-220x220.jpg" alt="3 tacos" width="220" height="220">
+                            <h3>Fuzzy's Taco Shop</h3>
+                            <p>Are you ready to party, because we are with our 2 for the price of 1 deal on steak tacos this weekend!</p>
+                        </div>
+                    </div>
                 </section>
                 <section class="grid8 weather_forecast">
                     <section class="weather-summary">
                         <h3>Today's Weather</h3>
+                        <img id="weather-img" src="images/sunny.png" alt="Sun icon" width="50" height="50">
                         <p>Currently: <span id="description"></span></p>
                         <p>Current Temp: <span id="current-temp">49</span>°F</p>
                         <p>Humidity: <span id="humidity"></span>%</p>
                     </section>
                     <div class="forecast">
                         <div id="forecast-zero">
-                            <h4 id="forecast-heading-zero">Monday</h4>
+                            <h4 id="forecast-heading0">Monday</h4>
                             <img id="forecast-img0" src="images/sunny.png" alt="Sun icon" width="50" height ="50">
                             <p>High: <span id="forecast-span0"></span>°F</p>
                         </div>
                         <div id="forecast-one">
-                            <h4 id="forecast-heading-one">Monday</h4>
+                            <h4 id="forecast-heading1">Monday</h4>
                             <img id="forecast-img1" src="images/sunny.png" alt="Sun icon" width="50" height ="50">
                             <p>High: <span id="forecast-span1"></span>°F</p>
                         </div>
                         <div id="forecast-two">
-                            <h4 id="forecast-heading-two">Monday</h4>
+                            <h4 id="forecast-heading2">Monday</h4>
                             <img id="forecast-img2" src="images/sunny.png" alt="Sun icon" width="50" height ="50">
                             <p>High: <span id="forecast-span2"></span>°F</p>
                         </div>
@@ -85,22 +123,36 @@
             </div>
         </main>
         <footer class="ft">
-            <div class="contact-info"><h4>Contact Us:</h4>
-                <p>arvadacoc1@gmail.com</p>
+            <div class="contact-info">
+                <a href="../lesson12/index.html">
+                <img src="images/A-logo-200x200.png" alt="Arvada Chamber of Commerce Logo" width="100" height="100">
+                </a>
+                <p>arvadacoc@arvadachamber.com</p>
                 <p>720-555-1234</p>
                 <p>123 Old Wadsworth<br>Arvada, CO 80003</p>
-            </div>
-            
+                 
             <a class="social-media" href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram icon" width="24" height="24"></a>
             <a class="social-media" href="https://www.twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter icon" width="24" height="24"></a>
             <a class="social-media" href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook icon" width="24" height="24"></a>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12261.340682552805!2d-105.08192916113288!3d39.79947294524046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626115483461!5m2!1sen!2sus" width="400" height="300" style="border: 1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12261.340682552805!2d-105.08192916113288!3d39.79947294524046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626115483461!5m2!1sen!2sus" width="320" height="240" style="border: 1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+            
+            <div class="quote">
+                <h4>Quote of the day:</h4>
+                <p>"The only way to get through life is to laugh your way through it. You either have to laugh or cry. I prefer to laugh. Crying gives me a headache." - Marjorie Pay Hinckley</p>
+                <p class="links">&copy; 2021 Arvada Chamber of Commerce - Website was last modified on <span id="lastMod"></span><br>
+                <a href="../lesson12/attributions.html" target="_blank">Site Attributions</a><br>
+                <a href="https://www.termsfeed.com/live/f225e70e-0cac-4921-9b40-203ee86063c2" target="_blank">Terms of Use</a></p>
+            </div>
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
        WebFont.load({google: {families: ['Lato', 'Marcellus']}});
     </script>
+    <script src="js/weather.js"></script>
+    <script src="js/date-and-nav.js"></script>
 </body>
 </html>

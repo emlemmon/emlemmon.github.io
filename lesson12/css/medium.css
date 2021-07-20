@@ -1,6 +1,92 @@
 @media only screen and (min-width: 37.5em) {
+    /******Navigation******/
 
-    nav button {
-        display: none;
+    .primaryNav {
+		display: flex;
+	}
+	.primaryNav li {
+		display: block;
+		flex: 1 1 auto;
+	}
+	.primaryNav a {
+		text-align: center;
+	}
+	.PrimaryNav li:first-child {
+		display: none;
+	}
+
+    /*****Index******/
+
+    .gridForIndex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5rem;
+    }
+
+    /******City******/
+
+    .current-events {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: .8rem;
+    }
+    .current-events:nth-child(odd) {
+        width: inherit;
+        height: inherit;
+        max-width: 100%;
+    }
+    .current-events.second-div {
+        grid-column: span 2;
+        margin: .5rem auto;
+    }
+    .history img {
+        max-width: 90%;
+    }
+    /******Join******/
+    
+    fieldset {
+        padding-left: 2rem;
+    }
+
+    /******Directory******/
+
+    #businesses-directory {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: .8rem;
+    }
+    .toggle {
+        display: inherit;
+    }
+
+    /*****Contact*****/
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: .8rem;
+    }
+    .contact-grid iframe {
+        max-width: 100%;
+    }
+    .board-directors-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: .8rem;
+    }
+    /******footer*******/
+    .ft {
+        grid-gap: 1rem;
+    }
+    .quote {
+        grid-column: span 2;
+        margin: .5rem auto;
+    }
+    .quote p, .quote h4 {
+        display: block;
+        text-align: center;
+        padding: .3rem;
+    }
+    .ft iframe {
+        margin: auto;
     }
 }

@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Arvada Colorado Chamber of Commerce</title>
+    <title>Directory - Arvada Chamber of Commerce</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page for Arvada Colorado Chamber of Commerce, an online place for local business to gather and advertise and foster a sense of community and neighborhood pride and ownership.">
+    <meta name="description" content="Businesses Directory page for Arvada Colorado Chamber of Commerce, a list of the businesses that are members of the Chamber as well as information about the businesses.">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="background-color">
         <header class="headers">
             <img src="images/A-logo-200x200.png" alt="Arvada Chamber of Commerce Logo" width="200" height="200">
-            <h1>Arvada Chamber of Commerce</h1>
+            
             <nav class="nav">
-                <button onclick="toggleMenu()">&#9776;</button>
+                <h1>Arvada Chamber of Commerce</h1>
+                <button onclick="toggleMenu()">&#9776; MENU </button>
                 <ul id="primaryNav" class="hide">
-                    <li class="navBtn active"><a href="../lesson12/index.html">Home</a></li>
-                    <li class="navBtn"><a href="../lesson12/city.html">City of Arvada</a></li>
-                    <li class="navBtn"><a href="../lesson12/join.html">Join our Community</a></li>
-                    <li class="navBtn"><a href="../lesson12/directory.html">Business Directory</a></li>
-                    <li class="navBtn"><a href="../lesson12/contact.html">Contact Information</a></li>
-                    <li class="navBtn searchBar"><input type="text" placeholder="Search..."></li>
+                    <li class="navBtn"><a href="../lesson12/index.html">Home</a></li>
+                    <li class="navBtn"><a href="../lesson12/city.html">Our City</a></li>
+                    <li class="navBtn"><a href="../lesson12/join.html">Join Us</a></li>
+                    <li class="navBtn active"><a href="../lesson12/directory.html">Directory</a></li>
+                    <li class="navBtn"><a href="../lesson12/contact.html">Contact Info</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h2>Our Businesses</h2>
-            <p>We're proud of the many businesses that call Arvada home, but especially of the ones that have joined our illustrious chamber.<br>Look around and get to know them all, and please give them your support by visiting them and seeing for yourself what makes them so special.</p>
-            <section class="business-holder">
-                <div class="businesses-directory">
+            <div class="intro">
+                <h2>Our Businesses</h2>
+                <p>We're proud of the many businesses that call Arvada home, but especially of the ones that have joined our illustrious chamber.<br>Look around and get to know them all, and please give them your support by visiting them and seeing for yourself what makes them so special.</p>
+            </div>
+        <section class="business-holder">
+            <div class="toggle">
+                <button onclick="toggleList()"><i class="fa fa-bars"></i> List</button>
+                <button onclick="toggleGrid()"><i class="fa fa-th-large"></i> Grid</button>
+            </div>
+            <div id="businesses-directory" class="businesses-directory">
 
-                </div>
-            </section>
+            </div>
+        </section>
         </main>
         <footer class="ft">
-            <div class="contact-info"><h4>Contact Us:</h4>
-                <p>arvadacoc1@gmail.com</p>
+            <div class="contact-info">
+                <a href="../lesson12/index.html">
+                <img src="images/A-logo-200x200.png" alt="Arvada Chamber of Commerce Logo" width="100" height="100">
+                </a>
+                <p>arvadacoc@arvadachamber.com</p>
                 <p>720-555-1234</p>
                 <p>123 Old Wadsworth<br>Arvada, CO 80003</p>
-            </div>
-            
+                 
             <a class="social-media" href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram icon" width="24" height="24"></a>
             <a class="social-media" href="https://www.twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter icon" width="24" height="24"></a>
             <a class="social-media" href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook icon" width="24" height="24"></a>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12261.340682552805!2d-105.08192916113288!3d39.79947294524046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626115483461!5m2!1sen!2sus" width="400" height="300" style="border: 1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12261.340682552805!2d-105.08192916113288!3d39.79947294524046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626115483461!5m2!1sen!2sus" width="320" height="240" style="border: 1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+            
+            <div class="quote">
+                <h4>Quote of the day:</h4>
+                <p>"The only way to get through life is to laugh your way through it. You either have to laugh or cry. I prefer to laugh. Crying gives me a headache." - Marjorie Pay Hinckley</p>
+                <p class="links">&copy; 2021 Arvada Chamber of Commerce - Website was last modified on <span id="lastMod"></span><br>
+                <a href="../lesson12/attributions.html" target="_blank">Site Attributions</a><br>
+                <a href="https://www.termsfeed.com/live/f225e70e-0cac-4921-9b40-203ee86063c2" target="_blank">Terms of Use</a></p>
+            </div>
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -55,5 +74,6 @@
        WebFont.load({google: {families: ['Lato', 'Marcellus']}});
     </script>
     <script src="js/b-directory.js"></script>
+    <script src="js/date-and-nav.js"></script>
 </body>
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Arvada Colorado Chamber of Commerce</title>
+    <title>Contact Information - Arvada Chamber of Commerce</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page for Arvada Colorado Chamber of Commerce, an online place for local business to gather and advertise and foster a sense of community and neighborhood pride and ownership.">
+    <meta name="description" content="Contact information page for Arvada Colorado Chamber of Commerce, as well as an imbedded Google map and the list of the Board of Directors.">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -14,39 +14,106 @@
     <div class="background-color">
         <header class="headers">
             <img src="images/A-logo-200x200.png" alt="Arvada Chamber of Commerce Logo" width="200" height="200">
-            <h1>Arvada Chamber of Commerce</h1>
+            
             <nav class="nav">
-                <button onclick="toggleMenu()">&#9776;</button>
+                <h1>Arvada Chamber of Commerce</h1>
+                <button onclick="toggleMenu()">&#9776; MENU </button>
                 <ul id="primaryNav" class="hide">
-                    <li class="navBtn active"><a href="../lesson12/index.html">Home</a></li>
-                    <li class="navBtn"><a href="../lesson12/city.html">City of Arvada</a></li>
-                    <li class="navBtn"><a href="../lesson12/join.html">Join our Community</a></li>
-                    <li class="navBtn"><a href="../lesson12/directory.html">Business Directory</a></li>
-                    <li class="navBtn"><a href="../lesson12/contact.html">Contact Information</a></li>
-                    <li class="navBtn searchBar"><input type="text" placeholder="Search..."></li>
+                    <li class="navBtn"><a href="../lesson12/index.html">Home</a></li>
+                    <li class="navBtn"><a href="../lesson12/city.html">Our City</a></li>
+                    <li class="navBtn"><a href="../lesson12/join.html">Join Us</a></li>
+                    <li class="navBtn"><a href="../lesson12/directory.html">Directory</a></li>
+                    <li class="navBtn active"><a href="../lesson12/contact.html">Contact Info</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-
+            <div class="border">
+                <h2>Contact Information</h2>
+                <div class="contact-grid">
+                    <section>
+                        <p>📧: arvadacoc@arvadachamber.com</p>
+                        <p>📞: 720-555-1234</p>
+                        <p>🏢: 123 Old Wadsworth<br>&emsp;&emsp;Arvada, CO 80003</p>
+                        <form action="thanks.html" method="GET">
+                            <label class="top">First Name* <input type="text" name="fname" required></label>
+                            <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                            <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                            <label class="bottom">Question or comment:<br><textarea class="comments" name="addComments" rows="5" cols="45"></textarea></label>
+                            <input type="submit" class="submitBtn" name="submitBtn" value="Send Message">
+                        </form>
+                    </section>
+                    <section>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12261.340682552805!2d-105.08192916113288!3d39.79947294524046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626115483461!5m2!1sen!2sus" width="400" height="300" style="border: 1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+                    </section>
+                </div>
+            </div>
+            <div class="border">
+                <h3>Our Board of Directors</h3>
+                <div class="board-directors-grid">
+                    <section>
+                        <h3>Amanda Gofrey - Chair of the Board</h3>
+                        <img src="images/headshots-325-christina-wocintechchat-com-lFntEHwQvi4-unsplash.jpg" alt="Headshot of Amanda Godfrey" width="325" height="325">
+                        <p></p>
+                    </section>
+                    <section>
+                        <h3>Derrick Hodges - Vice Chair</h3>
+                        <img src="images/headshots-325-ryan-hoffman-v7Jja2ChN6s-unsplash.jpg" alt="Headshot of Ryan Hodges" width="325" height="325">
+                        <p></p>
+                    </section>
+                    <section>
+                        <h3>Stephanie Lesterfield - Secretary</h3>
+                        <img src="images/headshots-325-christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" alt="Headshot of Stephanie Lesterfield" width="325" height="325">
+                        <p></p>
+                    </section>
+                    <section>
+                        <h3>Ben Parker - Treasurer</h3>
+                        <img src="images/headshots-325-ben-parker-OhKElOkQ3RE-unsplash.jpg" alt="Headshot of Ben Parker" width="325" height="325">
+                        <p></p>
+                    </section>
+                    <section>
+                        <h3>Timothy Evans - Board Member</h3>
+                        <img src="images/headshots-325-linkedin-sales-solutions-pAtA8xe_iVM-unsplash (2).jpg" alt="Headshot of Timothy Evans" width="325" height="325">
+                        <p></p>
+                    </section>
+                    <section>
+                        <h3>Vanessa Musick - Board Member</h3>
+                        <img src="images/headshots-325-amy-hirschi-b3AYk8HKCl0-unsplash.jpg" alt="Haadshot of Vanessa Musick" width="325" height="325">
+                        <p></p>
+                    </section>
+                </div>
+            </div>
         </main>
         <footer class="ft">
-            <div class="contact-info"><h4>Contact Us:</h4>
-                <p>arvadacoc1@gmail.com</p>
+            <div class="contact-info">
+                <a href="../lesson12/index.html">
+                <img src="images/A-logo-200x200.png" alt="Arvada Chamber of Commerce Logo" width="100" height="100">
+                </a>
+                <p>arvadacoc@arvadachamber.com</p>
                 <p>720-555-1234</p>
                 <p>123 Old Wadsworth<br>Arvada, CO 80003</p>
-            </div>
-            
+                 
             <a class="social-media" href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram icon" width="24" height="24"></a>
             <a class="social-media" href="https://www.twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter icon" width="24" height="24"></a>
             <a class="social-media" href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook icon" width="24" height="24"></a>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12261.340682552805!2d-105.08192916113288!3d39.79947294524046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626115483461!5m2!1sen!2sus" width="400" height="300" style="border: 1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12261.340682552805!2d-105.08192916113288!3d39.79947294524046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626115483461!5m2!1sen!2sus" width="320" height="240" style="border: 1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+            
+            <div class="quote">
+                <h4>Quote of the day:</h4>
+                <p>"The only way to get through life is to laugh your way through it. You either have to laugh or cry. I prefer to laugh. Crying gives me a headache." - Marjorie Pay Hinckley</p>
+                <p class="links">&copy; 2021 Arvada Chamber of Commerce - Website was last modified on <span id="lastMod"></span><br>
+                <a href="../lesson12/attributions.html" target="_blank">Site Attributions</a><br>
+                <a href="https://www.termsfeed.com/live/f225e70e-0cac-4921-9b40-203ee86063c2" target="_blank">Terms of Use</a></p>
+            </div>
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
        WebFont.load({google: {families: ['Lato', 'Marcellus']}});
     </script>
+    <script src="js/date-and-nav.js"></script>
 </body>
 </html>

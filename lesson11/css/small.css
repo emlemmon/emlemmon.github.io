@@ -87,6 +87,9 @@ footer a, footer a:visited {
     color: white;
     background-color: #FFB833;
 }
+
+/******Navigation*****/
+
 nav ul {
     list-style-type: none;
     padding: 0;

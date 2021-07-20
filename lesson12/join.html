@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Arvada Colorado Chamber of Commerce</title>
+    <title>Join - Arvada Chamber of Commerce</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page for Arvada Colorado Chamber of Commerce, an online place for local business to gather and advertise and foster a sense of community and neighborhood pride and ownership.">
+    <meta name="description" content="Join us page for Arvada Colorado Chamber of Commerce, includes a form requiring the information necessary to become a member of the Arvada Chamber of Commerce, as well as information about the different levels of membership.">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -14,32 +14,41 @@
     <div class="background-color">
         <header class="headers">
             <img src="images/A-logo-200x200.png" alt="Arvada Chamber of Commerce Logo" width="200" height="200">
-            <h1>Arvada Chamber of Commerce</h1>
+            
             <nav class="nav">
-                <button onclick="toggleMenu()">&#9776;</button>
+                <h1>Arvada Chamber of Commerce</h1>
+                <button onclick="toggleMenu()">&#9776; MENU </button>
                 <ul id="primaryNav" class="hide">
-                    <li class="navBtn active"><a href="../lesson12/index.html">Home</a></li>
-                    <li class="navBtn"><a href="../lesson12/city.html">City of Arvada</a></li>
-                    <li class="navBtn"><a href="../lesson12/join.html">Join our Community</a></li>
-                    <li class="navBtn"><a href="../lesson12/directory.html">Business Directory</a></li>
-                    <li class="navBtn"><a href="../lesson12/contact.html">Contact Information</a></li>
-                    <li class="navBtn searchBar"><input type="text" placeholder="Search..."></li>
+                    <li class="navBtn"><a href="../lesson12/index.html">Home</a></li>
+                    <li class="navBtn"><a href="../lesson12/city.html">Our City</a></li>
+                    <li class="navBtn active"><a href="../lesson12/join.html">Join Us</a></li>
+                    <li class="navBtn"><a href="../lesson12/directory.html">Directory</a></li>
+                    <li class="navBtn"><a href="../lesson12/contact.html">Contact Info</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div>
+            <div class="intro">
                 <h2>Join Our Community</h2>
-                <p>If you've been pondering becoming a member of the Arvada Chamber of Commerce, then we say, "Welcome!" We'd love to have you!<br>There are many reasons to join our chamber, but the first that comes to mind is the chance to be a part of a close-knit, supportive community. Arvada is a beautiful city with a lot of growth, and joining the Chamber of Commerce is a great way to be a part of that growth and action. There will be oppurtunities to get to know the other local business owners, networking and creating friendships and partnerships, as well as promote your business to the community at large.</p>
-            </div>
-            <form action="confirmation.html" method="GET">
+                <div class="join-grid">
+                    <p>If you've been pondering becoming a member of the Arvada Chamber of Commerce, then we say, "Welcome!" We'd love to have you!<br>There are many reasons to join our chamber, but the first that comes to mind is the chance to be a part of a close-knit, supportive community. Arvada is a beautiful city with a lot of growth, and joining the Chamber of Commerce is a great way to be a part of that growth and action. There will be oppurtunities to get to know the other local business owners, networking and creating friendships and partnerships, as well as promote your business to the community at large.</p>
+                    <ul><h3>Membership Levels Explained</h3></ul>
+                        <li><strong>Non-profit: </strong>For our non-profit level of membership, you'll have all the basic acces to our services, specificially inclusion in our directory, basic advertising on our website and the oppurtunity to be involved in community outreach programs.</li>
+                        <li><strong>Bronze: </strong>Our bronze level includes everything the previous level receives, as well as priority listings on our website, business training sessions, and social media advertising as well.</li>
+                        <li><strong>Silver: </strong>The silver level continues to build off of the Bronze level. It includes everything previously mentioned as well as extra advertising on our local radio station and 20 free tickets to the annual Arvada Businesses Social.</li>
+                        <li><strong>Gold: </strong>Our gold membership is the premier membership and comes with exclusive benefits including 30 Arvada Businesses Social tickets, employee training seminars, and first choice with sponsoring oppurtunities.</li>
+                </div>
                 <h3>To become a member of the Arvada Chamber of Commerce, please fill out the following information and a board memeber will get back to you.</h3>
+            </div>
+            <form class="join-form" action="confirmation.html" method="GET">
+
                 <fieldset>
-                    <legend><h3>Personal Information</h3></legend>
-                    <p>Tell us all about you:</p><br>
-                    <label class="top">First Name* <input type="text" name="fname" pattern="[A-Za-z ]" required></label>
-                    <label class="top">Last Name* <input type="text" name="lname" pattern="[A-Za-z ]" required></label>
-                    <label class="top title">Preferred Title
+                    
+                    <h3>Personal Information</h3>
+                    <p>Tell us all about you:</p>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top title">Preferred Title<br>
                         <select name="title">
                         <option value=""> </option>
                         <option value="mr">Mr</option>
@@ -47,52 +56,61 @@
                         <option value="ms">Ms</option>
                         <option value="dr">Dr</option>
                         </select>
-                    </label>
+                    </label><br>
                     <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                    <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
-
-                </fieldset>
-                <fieldset>
-                    <legend><h3>Company Information</h3></legend>
-                    <p>Tell us all about your business:</p><br>
+                    <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label><br>
+                    <h3>Company Information</h3>
+                    <p>Tell us all about your business:</p>
                     <label class="middle">Business Name* <input type="text" name="compName" required></label>
                     <label class="middle">Business Address <input type="text" name="address"></label>
                     <label class="middle">Business Website <input type="text" name="address"></label>
-                    <label class="middle">Please describe your business here: <textarea class="storm" name="addComments" rows="5" cols="45"></textarea></label>
+                    <label class="middle">Please describe your business here: <br><textarea class="storm" name="addComments" rows="5" cols="45"></textarea></label><br>
                     <label class="membership-level middle">Membership Level <input list="member-lvl" name="member-level"></label>
                     <datalist id="member-lvl">
                         <option value="Non-Profit: $100"></option>
                         <option value="Bronze: $200"></option>
                         <option value="Silver: $400"></option>
                         <option value="Gold: $1000"></option>
-                    </datalist>
+                    </datalist><br>
+                    <h3>Additional Information</h3>
+                    <p>Do you have any questions for us or additional information you think we should know? Tell us here: </p>
+                    <label class="bottom"><textarea class="comments" name="addComments" rows="5" cols="45"></textarea></label>
+                    <input type="submit" class="submitBtn" name="submitBtn" value="Click to Become a Member">
                 </fieldset>
-                <fieldset>
-                    <legend><h3>Additional Information</h3></legend>
-                    <p>Do you have any questions for us or additional information you think we should know? Tell us here: </p><br>
-                    <label class="bottom"><textarea class="storm" name="addComments" rows="5" cols="45"></textarea></label>
-                    <label class="bottom"><input type="checkbox" name="updated" value="yes" checked> Please keep me updated by email on further information regarding my membership status.</label>
-                    <input type="submit" class="submitBtn bottom" name="submitBtn" value="Click to Become a Member">
-                </fieldset>
+                <img src="images/arvada-sidewalk-300x400.jpg" alt="Sidewalk in Olde Town Arvada" width="300" height="400">
+
             </form>
         </main>
         <footer class="ft">
-            <div class="contact-info"><h4>Contact Us:</h4>
-                <p>arvadacoc1@gmail.com</p>
+            <div class="contact-info">
+                <a href="../lesson12/index.html">
+                <img src="images/A-logo-200x200.png" alt="Arvada Chamber of Commerce Logo" width="100" height="100">
+                </a>
+                <p>arvadacoc@arvadachamber.com</p>
                 <p>720-555-1234</p>
                 <p>123 Old Wadsworth<br>Arvada, CO 80003</p>
-            </div>
-            
+                 
             <a class="social-media" href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram icon" width="24" height="24"></a>
             <a class="social-media" href="https://www.twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter icon" width="24" height="24"></a>
             <a class="social-media" href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook icon" width="24" height="24"></a>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12261.340682552805!2d-105.08192916113288!3d39.79947294524046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626115483461!5m2!1sen!2sus" width="400" height="300" style="border: 1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12261.340682552805!2d-105.08192916113288!3d39.79947294524046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626115483461!5m2!1sen!2sus" width="320" height="240" style="border: 1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+            
+            <div class="quote">
+                <h4>Quote of the day:</h4>
+                <p>"The only way to get through life is to laugh your way through it. You either have to laugh or cry. I prefer to laugh. Crying gives me a headache." - Marjorie Pay Hinckley</p>
+                <p class="links">&copy; 2021 Arvada Chamber of Commerce - Website was last modified on <span id="lastMod"></span><br>
+                <a href="../lesson12/attributions.html" target="_blank">Site Attributions</a><br>
+                <a href="https://www.termsfeed.com/live/f225e70e-0cac-4921-9b40-203ee86063c2" target="_blank">Terms of Use</a></p>
+            </div>
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
        WebFont.load({google: {families: ['Lato', 'Marcellus']}});
     </script>
+    <script src="js/date-and-nav.js"></script>
 </body>
 </html>

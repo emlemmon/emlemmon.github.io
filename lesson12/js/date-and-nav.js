@@ -1,15 +1,18 @@
-const currentDate = new Date();
-const year = new Date().getFullYear();
-
-document.querySelector("#date").textContent = currentDate.toLocaleDateString("en-US", {dateStyle: "full"});
-document.querySelector("#currentYear").textContent = year;
+document.getElementById("lastMod").textContent = document.lastModified;
 
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("hide")
+  document.getElementById("primaryNav").classList.toggle("hide")
 }
 
+const hambutton = document.querySelector('.ham');
+const primaryNav = document.querySelector('.primaryNav')
+
+//hambutton.addEventListener('click', () => {primaryNav.classList.toggle('responsive')}, false);
+window.onresize = () => {if (window.innerWidth > 760) primaryNav.classList.remove('responsive')};
+
+
 // Get the container element
-var btnContainer = document.getElementById("primaryNav");
+var btnContainer = document.getElementsByClassName("nav");
 
 // Get all buttons with class="Navbtn" inside the container
 var btns = btnContainer.getElementsByClassName("navBtn");
@@ -28,3 +31,4 @@ for (let i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+toggleMenu();
